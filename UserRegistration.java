@@ -8,16 +8,16 @@ public class UserRegistration {
 		boolean flag = true;
 		while(flag)
 		{
-			System.out.println("Enter A Valid Last Name: ");
-			String lastName = sc.nextLine();
-			String pattern = "Cap[a-zA-Z\\s]{3,}";
-			if(lastName.matches(pattern)) 
+			System.out.println("Enter A Valid Email Id: ");
+			String emailId = sc.nextLine();
+			String pattern = "abc\\.[a-z]*\\@bl\\.co\\.(in)?";
+			if(emailId.matches(pattern)) 
 			{
-				System.out.println("Valid Last Name");
+				System.out.println("Valid Email Id");
 				flag = false;
 			}
 			else
-				System.out.println("Invalid Last Name");
+				System.out.println("Invalid Email Id");
 		}
 	}
 }
