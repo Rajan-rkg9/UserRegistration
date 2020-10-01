@@ -8,16 +8,16 @@ public class UserRegistration {
 		boolean flag = true;
 		while(flag)
 		{
-			System.out.println("Enter A Valid Email Id: ");
-			String emailId = sc.nextLine();
-			String pattern = "abc\\.[a-z]*\\@bl\\.co\\.(in)?";
-			if(emailId.matches(pattern)) 
+			System.out.println("Enter A Valid Mobile Number : ");
+			String phoneNumber = sc.nextLine();
+			String pattern = "(91) [0-9]{10}";
+			if(phoneNumber.matches(pattern)) 
 			{
-				System.out.println("Valid Email Id");
+				System.out.println("Valid Phone Number");
 				flag = false;
 			}
 			else
-				System.out.println("Invalid Email Id");
+				System.out.println("Invalid Phone Number");
 		}
 	}
 }
