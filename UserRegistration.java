@@ -8,10 +8,10 @@ public class UserRegistration {
 		boolean flag = true;
 		while(flag)
 		   {
-			System.out.println("Enter any Email Id : ");
-			String password = sc.nextLine();
+			System.out.println("Enter A Valid Email Id: ");
+			String emailId = sc.nextLine();
 			String pattern = "^[a-zA-Z0-9]+([_+-.]{1}[a-zA-Z0-9]+)?@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,}([_+-.]{1}[a-zA-Z]{2,})?";
-			if(password.matches(pattern))    
+			if(emailId.matches(pattern))
 			{
 				System.out.println("Valid Email Id");
 				flag = false;
