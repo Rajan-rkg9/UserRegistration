@@ -10,7 +10,7 @@ public class UserRegistration {
 		{
 			System.out.println("Enter A Valid Mobile Number : ");
 			String phoneNumber = sc.nextLine();
-			String pattern = "(91) [0-9]{10}";
+			String pattern = "[0-9]{2} [0-9]{10}";
 			if(phoneNumber.matches(pattern)) 
 			{
 				System.out.println("Valid Phone Number");
