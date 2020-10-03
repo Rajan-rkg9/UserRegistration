@@ -10,7 +10,7 @@ public class UserRegistration {
 		{
 			System.out.println("Enter A Valid Email Id: ");
 			String emailId = sc.nextLine();
-			String pattern = "abc\\.[a-z]*\\@bl\\.co\\.(in)?";
+			String pattern = "^[a-zA-Z0-9]+([_+-.]{1}[a-zA-Z0-9]+)?@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,}([_+-.]{1}[a-zA-Z]{2,})?";
 			if(emailId.matches(pattern)) 
 			{
 				System.out.println("Valid Email Id");
