@@ -10,8 +10,8 @@ public class UserRegistration {
 		{
 			System.out.println("Enter A Valid Password : ");
 			String password = sc.nextLine();
-			String pattern = "(?=.*[A-Z]).{8,}";
-			if(password.matches(pattern)) 
+			String pattern = ".*[A-Z].*";
+			if(password.matches(pattern) && password.length()>=8) 
 			{
 				System.out.println("Valid Password");
 				flag = false;
