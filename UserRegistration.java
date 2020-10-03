@@ -10,7 +10,7 @@ public class UserRegistration {
 		{
 			System.out.println("Enter A Valid Last Name: ");
 			String lastName = sc.nextLine();
-			String pattern = "Cap[a-zA-Z\\s]{3,}";
+			String pattern = "[A-Z]{1}[a-zA-Z\\s]{2,}";
 			if(lastName.matches(pattern)) 
 			{
 				System.out.println("Valid Last Name");
