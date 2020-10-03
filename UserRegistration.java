@@ -7,17 +7,17 @@ public class UserRegistration {
 		Scanner sc = new Scanner(System.in);
 		boolean flag = true;
 		while(flag)
-		{
-			System.out.println("Enter A Valid Mobile Number : ");
-			String phoneNumber = sc.nextLine();
-			String pattern = "[0-9]{2} [0-9]{10}";
-			if(phoneNumber.matches(pattern)) 
+		   {
+			System.out.println("Enter A Valid Password : ");
+			String password = sc.nextLine();
+			String pattern = ".*[A-Z].*";
+			if(password.matches(pattern) && password.length()>=8) 
 			{
-				System.out.println("Valid Phone Number");
+				System.out.println("Valid Password");
 				flag = false;
 			}
 			else
-				System.out.println("Invalid Phone Number");
+				System.out.println("Invalid Password");
 		}
 	}
 }
