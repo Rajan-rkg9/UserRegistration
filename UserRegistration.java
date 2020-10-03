@@ -8,16 +8,16 @@ public class UserRegistration {
 		boolean flag = true;
 		while(flag)
 		{
-			System.out.println("Enter A Valid Last Name: ");
-			String lastName = sc.nextLine();
-			String pattern = "[A-Z]{1}[a-zA-Z\\s]{2,}";
-			if(lastName.matches(pattern)) 
+			System.out.println("Enter A Valid Mobile Number : ");
+			String phoneNumber = sc.nextLine();
+			String pattern = "[0-9]{2} [0-9]{10}";
+			if(phoneNumber.matches(pattern)) 
 			{
-				System.out.println("Valid Last Name");
+				System.out.println("Valid Phone Number");
 				flag = false;
 			}
 			else
-				System.out.println("Invalid Last Name");
+				System.out.println("Invalid Phone Number");
 		}
 	}
 }
